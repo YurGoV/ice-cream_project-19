@@ -1,0 +1,32 @@
+// reset
+h1, h2, h4, h5, h6, p, ul {
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+
+ul {
+    list-style: none;  
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+h3 {margin-top: 0;   
+    margin-bottom: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+    }
+
+ul {
+    list-style: none;
+    }
+
+    .list {
+        padding-left: 0; 
+    }

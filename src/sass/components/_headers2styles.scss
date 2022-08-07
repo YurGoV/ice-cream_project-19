@@ -1,0 +1,21 @@
+.section__title { 
+    font-family: "Titan One"; 
+    font-weight: 400; 
+    font-size: 34px; 
+    line-height: 1.15; 
+    text-align: center; 
+    letter-spacing: 0.04em; 
+    text-transform: uppercase; 
+    color: #d41443; 
+     
+    @media screen and (min-width:768px) { 
+        font-size: 48px; 
+        line-height: 1.14; 
+        } 
+     
+    @media screen and (min-width:1200px) { 
+        font-size: 58px; 
+        line-height: 1.13; 
+        letter-spacing: 0.06em; 
+        } 
+}
