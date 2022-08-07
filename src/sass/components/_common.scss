@@ -5,26 +5,7 @@
     padding-bottom: 60px;
 }
 
-.section__subtitle { 
-    font-family: "Titan One"; 
-    font-weight: 400; 
-    font-size: 18px; 
-    line-height: 1.16; 
-    text-align: center; 
-    text-transform: uppercase; 
-     
-    color: #FFA5BA; 
-     
-    @media screen and (min-width:768px) { 
-    font-size: 26px; 
-    line-height: 1.15; 
-    } 
-     
-    @media screen and (min-width:1200px) { 
-    font-size: 30px; 
-    line-height: 1.13; 
-    } 
-}
+
 
 .visually-hidden {
     position: absolute;
