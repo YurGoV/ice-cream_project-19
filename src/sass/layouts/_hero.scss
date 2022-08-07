@@ -1,0 +1,219 @@
+.section-hero {
+    z-index: 1;
+    font-family: $font-family-second;
+    background-color: $bg-pink-hero;
+    padding: 0 0;
+}
+.hero {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 502px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+        max-width: 320px;
+        padding-left: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+        height: 416px;
+    }
+}
+.title-box {
+    position: absolute;
+    z-index: 3;
+    top: 194px;
+    @media screen and (min-width: 768px) {
+        top: 102px;
+    }
+}
+.hero__title {
+    z-index: 4;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2em;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: left;
+    color: $color-white;
+    @media screen and (min-width: 768px) {
+        font-size: 22px;
+        line-height: 1.12em;
+    }
+}
+.hero__title--large {
+    font-size: 48px;
+    line-height: 0.9em;
+    color: $color-accent-main;
+    @media screen and (max-width: 767px) {
+        max-width: 218px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 34px;
+        line-height: 0.9em;
+    }
+}
+.icecream:before {
+    content: "";
+    position: absolute;
+    width:346px;
+    height: 344px;
+    border-radius: 50%;
+    background: $color-subtitle;
+    
+    @media screen and (max-width: 767px) {
+        left: 36px;
+        bottom: 75px;
+    }
+    @media screen and (min-width: 768px) {
+        right: 185px;
+        bottom: 40px;
+    }
+}
+.icecream__image {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 27px;
+    @media screen and (min-width: 768px) {
+        right: 303px;
+    }
+}
+.button-set {
+    position: absolute;
+    display: flex;
+    bottom: 158px;
+    z-index: 4;
+    @media screen and (min-width: 768px) {
+        bottom: 190px;
+    }
+}
+
+.button-set__prod {
+    margin-right: 8px;
+    font-family: var(--font_sec);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    color: $color-white;
+    width: 62px;
+    height: 24px;
+    background: $color-accent-main;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.button-set__how {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    color: $color-accent-main;
+    width: 82.8px;
+    height: 24px;
+    background: $color-white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.hero__milk {
+    position: absolute;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    bottom: 16px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.milk__description {
+    font-family: $font-family;
+    width: 114px;
+    height: auto;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: $color-white;
+}
+.milk__link {
+    margin-top: 7px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: $color-white;
+}
+.milk__arrow {
+    fill: $color-accent-main;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+}
+.hero__tasty {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.hero-list {
+    z-index: 3;
+    position: absolute;
+    right: 40px;
+    bottom: 221px;
+    @media screen and (max-width: 767px) {
+        display: none;
+     }
+}
+.hero-list__item {
+    position: relative;
+    margin-bottom: 0;
+    font-style: Regular;
+    font-size: 28px;
+    line-height: 1.18em;
+    color: $color-accent-main;
+    text-align: right;
+}
+.hero-list__item-small {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.14em;
+    text-align: right;
+    color: $color-white;
+
+    &:nth-child(2) {
+        margin-bottom: 16px;
+    }
+}
+
+.hero-list__item:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $color-white;
+    
+    @media screen and (max-width: 767px) {
+       display: none;
+    }
+    @media screen and (min-width: 768px) {
+        right: -8px;
+        bottom: 20px;
+    }
+}
