@@ -1,0 +1,83 @@
+.section--gallery {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 77%, rgba(255, 245, 246, 1) 78%, rgba(255, 245, 246, 1) 100%);
+}
+
+.gallery {
+    position: relative;
+    width: 320px;
+    height: 136px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery {
+        width: 768px;
+        height: 327px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery {
+        width: 1013px;
+        height: 430px;
+    }
+}
+
+.gallery__foto__one {
+    position: absolute;
+    top: 30%;
+}
+
+.gallery__foto__two {
+    position: absolute;
+    top: 17%;
+    left: 14%;
+}
+
+.gallery__foto__three {
+    position: absolute;
+    top: 53%;
+    left: 14%;
+}
+
+.gallery__foto__four {
+    position: absolute;
+    left: 29%;
+}
+
+.gallery__foto__five {
+    position: absolute;
+    top: 68%;
+    left: 29%;
+}
+
+.gallery__foto__six {
+    position: absolute;
+    top: 19%;
+    left: 58%;
+}
+
+.gallery__foto__seven {
+    position: absolute;
+    top: 54%;
+    left: 58%;
+}
+
+.gallery__foto__eight {
+    position: absolute;
+    top: 13%;
+    left: 72%;
+}
+
+.gallery__foto__nine {
+    position: absolute;
+    top: 49%;
+    left: 72%;
+}
+
+.gallery__foto__ten {
+    position: absolute;
+    top: 34%;
+    right: 0%;
+}
