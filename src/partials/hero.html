@@ -1,4 +1,4 @@
-<section class="section">
+<section class="section-hero">
     <div class="container hero">
       <div class="icecream hero__icecream">
         <picture>
@@ -28,6 +28,15 @@
         <button type="button" class="button-set__prod">Products</button>
         <button type="button" class="button-set__how">How it’s made?</button>
         </div>
+        <div>
+            <ul class="list hero-list">
+                <li class="hero-list__item">16</li>
+                <li class="hero-list__item-small">cafes</li>
+                <li class="hero-list__item">23</li>
+                <li class="hero-list__item-small">food trucks</li>
+            </ul>
+        </div>
+
         <div class="milk hero__milk">
           <picture>
             <source 
@@ -42,7 +51,7 @@
             />
             <img class="milk__image" src="./images/hero/hero_tab-2.png" alt="IceCream">
           </picture>
-          <div>
+          <div class="description">
           <p class="milk__description">Our products are made exclusively using BIO (ECO) ingredients, which are certified by international standards.</p>
           <a class="link milk__link" href="#">
             <svg
@@ -53,6 +62,21 @@
             </svg>
           </a>
         </div>
+        </div>
+        <div class="hero__tasty">
+            <picture>
+                <source 
+                  media="(min-width: 1200px)"
+                  srcset="./images/hero/hero-3_desk.png 1x, ./images/hero/hero-3_desk@2x.png 2x"
+                  type="image/png"
+                />
+                <source 
+                  media="(min-width: 768px)"
+                  srcset="./images/hero/hero_tab-3.png 1x, ./images/hero/hero_tab-3@2x.png 2x"
+                  type="image/png"
+                />
+                <img class="milk__image" src="./images/hero/hero_tab-3.png" alt="IceCream">
+              </picture>
         </div>
     </div>
   </section>
