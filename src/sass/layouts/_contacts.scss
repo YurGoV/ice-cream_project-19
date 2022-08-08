@@ -1,0 +1,103 @@
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contacts__item {
+    padding: 40px 32px;
+
+    max-width: 280px;
+
+    border-radius: 24px;
+
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.contacts__title {
+    margin-bottom: 20px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 16px;
+
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+
+    color: $color-white;
+    background-color: $color-product-card2;
+
+    &--foodtrack {
+        width: 130px;
+
+        background-color: $color-product-card3;
+    }
+}
+
+.contacts__descr:not(:first-child) {
+    padding-top: 24px;
+}
+
+.contacts__descr:not(:last-child) {
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid $color-slider-quotes;
+}
+
+.contacts__name {
+    margin-bottom: 8px;
+        
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+}
+
+.contacts__text {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: $color-text-main;
+}
+
+.work__item:not(:last-child) {
+    padding-bottom: 8px;
+}
+
+.work__day {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+}
+
+.work__time {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    text-transform: uppercase;
+
+    color: $color-subtitle;
+}
+
+.contacts__link {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: $color-text-main;
+}
