@@ -1,0 +1,97 @@
+.reviews {
+  background-color: $bg-section-main;
+}
+
+.reviews__customer-photo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 63px;
+}
+
+.reviews__customer-text {
+  padding-bottom: 62px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: $color-black;
+
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 216%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 186%;
+  }
+}
+
+.reviews__customer-text::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0 px;
+
+  margin-top: 33px;
+
+  display: block;
+
+  background-color: #c7133e;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews__customer-name {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+
+  color: $color-black;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.reviews__slider {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    padding-left: 51px;
+    padding-right: 55px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 620px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
