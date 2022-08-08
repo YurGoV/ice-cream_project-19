@@ -1,103 +1,158 @@
+.section-contacts  {
+    background-color: $bg-section-secondary;
+}
+
 .contacts {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-}
 
-.contacts__item {
-    padding: 40px 32px;
+    &__item {
+        padding: 40px 32px;
+    
+        max-width: 280px;
+    
+        border-radius: 24px;
+    
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    }
 
-    max-width: 280px;
+    &__title {
+        margin-bottom: 20px;
+    
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 16px;
+    
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        border-radius: 4px;
+    
+        color: $color-white;
+        background-color: $color-product-card2;
+    
+        &--foodtrack {
+            width: 130px;
+    
+            background-color: $color-product-card3;
+        }
+    }
 
-    border-radius: 24px;
+    &__descr:not(:first-child) {
+        padding-top: 24px;
+    }
 
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-}
+    &__descr:not(:last-child) {
+        padding-bottom: 24px;
+    
+        border-bottom: 1px solid $color-slider-quotes;
+    }
 
-.contacts__title {
-    margin-bottom: 20px;
+    &__name {
+        margin-bottom: 8px;
+    
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+    }
 
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 16px;
+    &__text {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+    
+        color: $color-text-main;
+    }
 
-    font-family: $font-family;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    border-radius: 4px;
-
-    color: $color-white;
-    background-color: $color-product-card2;
-
-    &--foodtrack {
-        width: 130px;
-
-        background-color: $color-product-card3;
+    &__link {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+    
+        color: $color-text-main;
     }
 }
 
-.contacts__descr:not(:first-child) {
-    padding-top: 24px;
+.work {
+    &__item:not(:last-child) {
+        padding-bottom: 8px;
+    }
+
+    &__day {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+    }
+
+    &__time {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        text-transform: uppercase;
+    
+        color: $color-subtitle;
+    }
 }
 
-.contacts__descr:not(:last-child) {
-    padding-bottom: 24px;
+.contacts-button {
+    margin-top: 32px;
 
-    border-bottom: 1px solid $color-slider-quotes;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 
-.contacts__name {
-    margin-bottom: 8px;
+    &__location {
+        padding: 12px 17px;
         
-    font-family: $font-family;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-}
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        color: $color-white;
+        
+        border-radius: 22px;
+        border: none;   
+    
+        background-color: $color-accent-location; 
+    }
 
-.contacts__text {
-    font-family: $font-family;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
+    &__franchise {
+        padding: 12px 32px;
+    
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        color: $color-accent-location;
+    
+        border-radius: 22px;
+        border: none;
+    
+        background-color: $color-white;
+    
+        // cursor: pointer;
+    }
 
-    color: $color-text-main;
-}
-
-.work__item:not(:last-child) {
-    padding-bottom: 8px;
-}
-
-.work__day {
-    font-family: $font-family;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-}
-
-.work__time {
-    font-family: $font-family;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    text-transform: uppercase;
-
-    color: $color-subtitle;
-}
-
-.contacts__link {
-    font-family: $font-family;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
-
-    color: $color-text-main;
 }
