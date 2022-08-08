@@ -1,3 +1,15 @@
+
+// width: 100%;
+// background-repeat: no-repeat;
+// background-size: cover;
+// background-image: url(/src/images/about/about-2_mob.png);
+
+// Retina mobil
+// @media (min-device-pixel-ratio: 2),
+//  (min-resolution: 192dpi),
+//  (min-resolution: 2dppx) {
+// background-image: url(/src/images/about/about-2_mob@2x.png);
+
 .about {
 width: 100%;
 margin-left: auto;
@@ -15,8 +27,8 @@ padding-right: 32px;
 @media screen and (min-width: 1200px) {
 max-width: 1200px;
 
-padding-left: 16px;
-padding-right: 16px;
+padding-left: 0px;
+padding-right: 0px;
 }
 }
 
@@ -47,6 +59,7 @@ line-height: 1.13;
 
 .about__header {
 width: 100%;
+padding-bottom: 40px;
 margin-left: auto;
 margin-right: auto;
 
@@ -54,15 +67,49 @@ margin-right: auto;
 @media screen and (max-width: 320px) {
 width: 200px;
 }
+
+@media screen and (min-width:1200px) { 
+padding-bottom: 60px;
+} 
 }
 
 .about__list {
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(/src/images/about/about-2_mob.png);
+
+@media screen and (max-width:320px) { 
+background-image: none;
+}
+
+@media screen and (min-width: 767px) {
+background-image: none;
+}
+
+@media screen and (max-width:768px) { 
+background-image: none;
+}
+
+@media screen and (min-width: 1200px) {
+background-image: url(/src/images/about/about-1_desk.png);
+display: flex;
+
+// Retina desk
+@media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+background-image: url(/src/images/about/about-1_desk@2x.png);
+}
+
+@media (min-device-pixel-ratio: 3),
+ (min-resolution: 288dpi),
+ (min-resolution: 3dppx) {
+background-image: url(/src/images/about/about-1_desk@3x.png);
+}
+}
 
 @media screen and (min-width:768px) { 
-display: flex; 
-} 
- 
-@media screen and (min-width:1200px) { 
 display: flex; 
 } 
 }
@@ -71,20 +118,74 @@ display: flex;
 width: 100%;
 height: 100%;
 
+@media screen and (max-width: 767px) {
+padding-bottom: 25px;
+}
+
 @media screen and (min-width:768px) { 
 width: 336px;
-height: 335px; 
+height: 335px;
 } 
  
-@media screen and (min-width:1200px) { 
+@media screen and (min-width:1200px) {
 width: 501px;
-height: 501px; 
+height: 501px;
 } 
+}
+
+.about__message {
+margin-right: auto;
+
+@media screen and (max-width:320px) { 
+width: 280px;
+}
+
+@media screen and (min-width:768px) { 
+margin-left: 32px;
+}
+
+@media screen and (min-width:1200px) { 
+margin-left: 100px;
+background-image: none;
+}
+}
+
+.about__background {
+width: 100%;
+background-image: url(/src/images/about/about-2_mob.png);
+
+@media screen and (max-width:320px) { 
+background-repeat: no-repeat;
+background-position-y: 45%;
+background-image: url(/src/images/about/about-2_mob.png);
+
+// Retina mob
+@media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+background-image: url(/src/images/about/about-2_mob@2x.png);
+background-size: contain;
+}
+
+@media (min-device-pixel-ratio: 3),
+ (min-resolution: 288dpi),
+ (min-resolution: 3dppx) {
+background-image: url(/src/images/about/about-2_mob@3x.png);
+background-size: contain;
+}
+}
+
+@media screen and (min-width: 321px) {
+background-image: none;
+}
+
+@media screen and (min-width:1200px) { 
+background-image: none;
+}
 }
 
 .about__text {
 width: 100%;
-margin-left: auto;
 margin-right: auto;
 
 font-family: 'DM Sans';
@@ -95,24 +196,23 @@ color: black;
 
 @media screen and (max-width: 320px) {
 width: 220px;
-padding-bottom: 28px;
+padding-bottom: 25px;
 }
 
 @media screen and (max-width: 767px) {
-padding-bottom: 28px;
+padding-bottom: 25px;
 }
 
 @media screen and (min-width:768px) { 
 width: 334px;
-padding: 40px 0px 40px 32px;
+padding-bottom: 25px;
 
 font-size: 14px;
 line-height: 1.76; 
 } 
  
 @media screen and (min-width:1200px) { 
-width: 463px;
-margin-left: 100px;
+width: 467px;
 padding: 90px 0px 32px;
 
 font-size: 16px;
@@ -132,7 +232,7 @@ padding-bottom: 20px;
 }
 
 @media screen and (min-width:768px) { 
-padding: 0px 0px 40px 32px;
+padding-bottom: 25px;
 
 font-size: 14px;
 line-height: 1.76;
@@ -140,7 +240,6 @@ letter-spacing: 0.04em;
 } 
  
 @media screen and (min-width:1200px) { 
-margin-left: 100px;
 padding: 0px 0px 40px;
 
 font-size: 14px;
