@@ -75,7 +75,6 @@
     gap: 28px;
 
     margin-bottom: 40px;
-
 }
 
 .footer__contact {
@@ -88,11 +87,11 @@
 }
 
 .footer__call-to-action {
-    color: #000000;
+    color: $color-black;
 }
 
 .footer__link {
-    color: #D41443;
+    color: $color-accent-main;
 }
 
 .footer__text {
@@ -124,14 +123,28 @@
 
 // Icons styles
 
-// .footer-social-media__link {
-//     height: 34px;
-//     width: 34px;
+.footer-social-media__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-//     background-color: #FEA5BB;
-//     border-radius: 50%;
+    height: 34px;
+    width: 34px;
 
-//     fill: #FFFFFF;
-// }
+    background-color: #FEA5BB;
+    border-radius: 50%;
+
+    
+    fill: $color-white; 
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $color-accent-main;
+    }
+}
 
 
