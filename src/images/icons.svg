@@ -3,7 +3,7 @@
     <symbol id="icon-mobile-burger" viewBox="0 0 46 32">
       <path fill="none" stroke="#d41443" stroke-width="2.286" style="stroke:var(--color1, #d41443)" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"/>
     </symbol>
-    <symbol id="icon-mobile-burger-close" viewBox="0 0 32 32">
+    <symbol id="icon-mobile-Burger-close" viewBox="0 0 32 32">
       <path fill="none" stroke="#fff" stroke-width="2" style="stroke:var(--color2, #fff)" d="m2.518 2 26.963 28M2 29.481 30 2.518"/>
     </symbol>
     <symbol id="icon-group-milk" viewBox="0 0 32 32">
