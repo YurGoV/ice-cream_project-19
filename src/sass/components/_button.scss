@@ -1,0 +1,43 @@
+.button {
+    border: 1px solid transparent;
+    width: auto;
+    height: 44px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    font-family: inherit;
+    cursor: pointer;
+    
+    color: $color-white;
+    background-color: $color-accent-main;
+    border-radius: 20px;
+    transition: color $timing-function $transition-duration, background-color $timing-function $transition-duration, border-radius $timing-function $transition-duration;
+    
+    &--hovered:hover,
+    &--hovered:focus {
+    background-color: $bg-mobile-menu;
+    }
+    
+    &--pseudo::after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+    
+    margin-left: 13px;
+    vertical-align: middle;
+    
+    background-image: url(#);
+    }
+    &--another {
+    color: $color-accent-main;
+    background-color: $color-white;
+    }
+    
+    &--another:hover,
+    &--another:focus {
+    font-weight: 700;
+    color: $color-white;
+    background-color: $bg-mobile-menu;
+    }
+}
