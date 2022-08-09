@@ -2,8 +2,11 @@
     background-image: linear-gradient(to bottom, $color-white 23%, $bg-section-secondary 23%, $bg-section-secondary 100%);
 
     @media screen and(min-width:768px) {
-
         background-image: linear-gradient(to bottom, $color-white 44%, $bg-section-secondary 44%, $bg-section-secondary 100%);
+    }
+
+    @media screen and(min-width:1200px) {
+        background-image: linear-gradient(to bottom, $color-white 22%, $bg-section-secondary 22%, $bg-section-secondary 100%);
     }
 }
 
@@ -109,7 +112,6 @@
         border-bottom: 1px solid $color-slider-quotes;
 
         @media screen and(min-width:768px) {
-        
             padding-bottom: 32px;
         }
     }
@@ -123,10 +125,16 @@
         line-height: 1.86;
         letter-spacing: 0.04em;
 
-        @media screen and(min-width:768px) {
+        @media screen and(min-width:768px) and (max-width:1199px) {
             margin-bottom: 12px;
             font-size: 14px;
         }
+
+        @media screen and(min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.86;
+        }
+
     }
 
     &__text {
@@ -140,6 +148,11 @@
         @media screen and(min-width:768px) {
             font-size: 14px;
             line-height: 1.66;
+        }
+
+        @media screen and(min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.83;
         }
     }
 
@@ -155,6 +168,13 @@
 
         @media screen and(min-width:768px) {
             font-size: 14px;
+            line-height: 1.83;
+        }
+
+        @media screen and(min-width:1200px) {
+            display: inline-flex;
+            flex-direction: column;
+            font-size: 16px;
             line-height: 1.83;
         }
 
@@ -183,6 +203,10 @@
         @media screen and(min-width:768px) {
             font-size: 14px;
         }
+
+        @media screen and(min-width:1200px) {
+            font-size: 16px;
+        }
     }
 
     &__time {
@@ -196,6 +220,10 @@
 
         @media screen and(min-width:768px) {
             font-size: 14px;
+        }
+
+        @media screen and(min-width:1200px) {
+            font-size: 16px;
         }
     }
 }
