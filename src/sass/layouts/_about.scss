@@ -1,17 +1,6 @@
-
-// width: 100%;
-// background-repeat: no-repeat;
-// background-size: cover;
-// background-image: url(/src/images/about/about-2_mob.png);
-
-// Retina mobil
-// @media (min-device-pixel-ratio: 2),
-//  (min-resolution: 192dpi),
-//  (min-resolution: 2dppx) {
-// background-image: url(/src/images/about/about-2_mob@2x.png);
-
 .about {
 width: 100%;
+
 margin-left: auto;
 margin-right: auto;
 padding-left: 20px;
@@ -52,6 +41,7 @@ line-height: 1.15;
  
 @media screen and (min-width:1200px) {
 margin-bottom: 16px;
+
 font-size: 30px; 
 line-height: 1.13; 
 } 
@@ -59,6 +49,7 @@ line-height: 1.13;
 
 .about__header {
 width: 100%;
+
 padding-bottom: 40px;
 margin-left: auto;
 margin-right: auto;
@@ -75,6 +66,7 @@ padding-bottom: 60px;
 
 .about__list {
 width: 100%;
+
 background-repeat: no-repeat;
 background-size: cover;
 background-image: url(/src/images/about/about-2_mob.png);
@@ -146,12 +138,14 @@ margin-left: 32px;
 
 @media screen and (min-width:1200px) { 
 margin-left: 100px;
+
 background-image: none;
 }
 }
 
 .about__background {
 width: 100%;
+
 background-image: url(/src/images/about/about-2_mob.png);
 
 @media screen and (max-width:320px) { 
@@ -186,6 +180,7 @@ background-image: none;
 
 .about__text {
 width: 100%;
+
 margin-right: auto;
 
 font-family: 'DM Sans';
@@ -196,6 +191,7 @@ color: black;
 
 @media screen and (max-width: 320px) {
 width: 220px;
+
 padding-bottom: 25px;
 }
 
@@ -205,6 +201,7 @@ padding-bottom: 25px;
 
 @media screen and (min-width:768px) { 
 width: 334px;
+
 padding-bottom: 25px;
 
 font-size: 14px;
@@ -213,6 +210,7 @@ line-height: 1.76;
  
 @media screen and (min-width:1200px) { 
 width: 467px;
+
 padding: 90px 0px 32px;
 
 font-size: 16px;
@@ -253,3 +251,46 @@ letter-spacing: 0.04em;
 display: inline-block;
 padding-top: 14px;
 }
+
+
+.button {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-direction: row;
+
+&--another {
+padding: 12px 32px;
+    
+display: inline-flex;
+justify-content: center;
+align-items: center;
+    
+font-weight: 700;
+font-size: 14px;
+line-height: 1.28;
+color: $color-accent-main;
+    
+border-radius: 22px;
+border: none;
+    
+background-color: $color-white;
+    
+cursor: pointer;
+}
+
+@media screen and (min-width:321px) { 
+font-size: 16px;
+line-height: 1.31;
+} 
+
+&--icon-arrow {
+padding-top: 2px;
+
+fill: currentColor;
+}
+}
+
+
