@@ -9,7 +9,11 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button type="button" class="products__button">
+        <button
+          type="button"
+          class="products__button"
+          data-modal-ice-cream-open
+        >
           <svg class="products__icon" width="10px" height="10px">
             <use href="./images/icons.svg#icon-arrow-right"></use>
           </svg>
@@ -21,7 +25,11 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button type="button" class="products__button">
+        <button
+          type="button"
+          class="products__button"
+          data-modal-ice-coffee-open
+        >
           <svg class="products__icon" width="10px" height="10px">
             <use href="./images/icons.svg#icon-arrow-right"></use>
           </svg>
@@ -33,7 +41,11 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button type="button" class="products__button">
+        <button
+          type="button"
+          class="products__button"
+          data-modal-milkshakes-open
+        >
           <svg class="products__icon" width="10px" height="10px">
             <use href="./images/icons.svg#icon-arrow-right"></use>
           </svg>
@@ -42,3 +54,162 @@
     </ul>
   </div>
 </section>
+<!-- read more -->
+<!-- ice-cream -->
+<div class="products__backdrop is-hidden" data-modal-ice-cream>
+  <div class="modal--ice-cream modal">
+    <button class="modal__btn-close btn" data-modal-ice-cream-close>
+      <svg class="modal__icon-close" width="14px" height="14px">
+        <use href="./images/icons.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <h3 class="modal__products-title products__title">ice cream</h3>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/product/product-1_desk.png    1x,
+          ./images/product/product-1_desk@2x.png 2x
+          ./images/product/product-1_desk@3x.png 3x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/product/product-1_tab.png    1x,
+          ./images/product/product-1_tab@2x.png 2x
+          ./images/product/product-1_tab@3x.png 3x
+        "
+        type="image/png"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/product/product-1_mob.png    1x,
+          ./images/product/product-1_mob@2x.png 2x
+          ./images/product/product-1_mob@3x.png 3x
+        "
+        type="image/png"
+      />
+      <img
+        src="./images/product/product-1_mob.png"
+        alt="ice-cream"
+        class="modal__img"
+        width="280px"
+        height="280px"
+      />
+    </picture>
+    <p class="modal__products-text products__text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem esse
+      sit delectus praesentium incidunt velit tempore corporis libero et sequi
+      odio, facere unde voluptatibus? Voluptatem quasi saepe assumenda iusto
+      expedita?
+    </p>
+  </div>
+</div>
+<!-- ice-coffee -->
+<div class="products__backdrop is-hidden" data-modal-ice-coffee>
+  <div class="modal--ice-coffee modal">
+    <button class="modal__btn-close btn" data-modal-ice-coffee-close>
+      <svg class="modal__icon-close" width="14px" height="14px">
+        <use href="./images/icons.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <h3 class="modal__products-title products__title">ice coffee</h3>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/product/product-2_desk.png    1x,
+          ./images/product/product-2_desk@2x.png 2x
+          ./images/product/product-2_desk@3x.png 3x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/product/product-2_tab.png    1x,
+          ./images/product/product-2_tab@2x.png 2x
+          ./images/product/product-2_tab@3x.png 3x
+        "
+        type="image/png"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/product/product-2_mob.png    1x,
+          ./images/product/product-2_mob@2x.png 2x
+          ./images/product/product-2_mob@3x.png 3x
+        "
+        type="image/png"
+      />
+      <img
+        src="./images/product/product-2_mob.png"
+        alt="ice-coffee"
+        class="modal__img"
+        width="280px"
+        height="280px"
+      />
+    </picture>
+    <p class="modal__products-text products__text">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dolorum in
+      eligendi minima voluptas harum odio itaque quis quibusdam perferendis ea
+      temporibus distinctio molestias inventore, optio facilis atque alias nemo!
+    </p>
+  </div>
+</div>
+<!-- milkshakes -->
+<div class="products__backdrop is-hidden" data-modal-milkshakes>
+  <div class="modal--milkshakes modal">
+    <button class="modal__btn-close btn" data-modal-milkshakes-close>
+      <svg class="modal__icon-close" width="14px" height="14px">
+        <use href="./images/icons.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <h3 class="modal__products-title products__title">milkshakes</h3>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/product/product-3_desk.png    1x,
+          ./images/product/product-3_desk@2x.png 2x
+          ./images/product/product-3_desk@3x.png 3x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/product/product-3_tab.png    1x,
+          ./images/product/product-3_tab@2x.png 2x
+          ./images/product/product-3_tab@3x.png 3x
+        "
+        type="image/png"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/product/product-3_mob.png    1x,
+          ./images/product/product-3_mob@2x.png 2x
+          ./images/product/product-3_mob@3x.png 3x
+        "
+        type="image/png"
+      />
+      <img
+        src="./images/product/product-3_mob.png"
+        alt="milkshakes"
+        class="modal__img"
+        width="280px"
+        height="280px"
+      />
+    </picture>
+    <p class="modal__products-text products__text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quos
+      doloremque, voluptatum error incidunt autem repellendus id, labore nemo
+      repudiandae dolores quasi expedita ut impedit vitae tempora nostrum
+      adipisci blanditiis?
+    </p>
+  </div>
+</div>

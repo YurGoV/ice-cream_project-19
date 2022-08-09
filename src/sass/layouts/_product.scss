@@ -145,13 +145,13 @@
   border-radius: 24px;
 
   @media screen and (min-width: 768px) {
-    max-width: calc((100% - (3 - 1) * 16px) / 3);
+    flex-basis: calc((100% - (3 - 1) * 16px) / 3);
     max-height: 473px;
     padding: 0 32px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: calc((100% - (3 - 1) * 32px) / 3);
+    flex-basis: calc((100% - (3 - 1) * 32px) / 3);
     max-height: 535px;
     padding: 0 63px;
   }
@@ -180,6 +180,12 @@
       background-image: url('/src/images/product/product-1_mob@2x.png');
     }
 
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('/src/images/product/product-1_mob@3x.png');
+    }
+
     @media screen and(min-width:768px) {
       width: 224px;
       height: 224px;
@@ -191,6 +197,12 @@
         screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-1_tab@2x.png');
       }
+
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url('/src/images/product/product-1_tab@3x.png');
+      }
     }
 
     @media screen and(min-width:1200px) {
@@ -198,10 +210,17 @@
       height: 394px;
       transform: translate(-50%, -134%);
       background-image: url('/src/images/product/product-1_desk.png');
+
       @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-1_desk@2x.png');
+      }
+
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url('/src/images/product/product-1_desk@3x.png');
       }
     }
   }
@@ -230,6 +249,12 @@
       background-image: url('/src/images/product/product-2_mob@2x.png');
     }
 
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('/src/images/product/product-2_mob@3x.png');
+    }
+
     @media screen and(min-width:768px) {
       width: 224px;
       height: 224px;
@@ -241,6 +266,12 @@
         screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-2_tab@2x.png');
       }
+
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url('/src/images/product/product-2_tab@3x.png');
+      }
     }
 
     @media screen and(min-width:1200px) {
@@ -248,10 +279,17 @@
       height: 394px;
       transform: translate(-50%, -134%);
       background-image: url('/src/images/product/product-2_desk.png');
+
       @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-2_desk@2x.png');
+      }
+
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url('/src/images/product/product-2_desk@3x.png');
       }
     }
   }
@@ -280,6 +318,12 @@
       background-image: url('/src/images/product/product-3_mob@2x.png');
     }
 
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('/src/images/product/product-3_mob@3x.png');
+    }
+
     @media screen and(min-width:768px) {
       width: 224px;
       height: 224px;
@@ -291,6 +335,12 @@
         screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-3_tab@2x.png');
       }
+
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url('/src/images/product/product-3_tab@3x.png');
+      }
     }
 
     @media screen and(min-width:1200px) {
@@ -298,11 +348,137 @@
       height: 394px;
       transform: translate(-50%, -134%);
       background-image: url('/src/images/product/product-3_desk.png');
+
       @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-3_desk@2x.png');
       }
+
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url('/src/images/product/product-3_desk@3x.png');
+      }
     }
+  }
+}
+
+.products__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+
+  background-color: rgba(255, 184, 202, 0.36);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+
+  transition: all $timing-function $transition-duration;
+  transition: opacity $timing-function $transition-duration,
+    visibility $timing-function $transition-duration;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-height: 600px;
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  transition: all $timing-function $transition-duration;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 550px;
+    max-height: 600px;
+  }
+
+  &--ice-cream {
+    background-color: $bg-pink-hero;
+  }
+
+  &--ice-coffee {
+    background-color: $color-product-card2;
+  }
+
+  &--milkshakes {
+    background-color: $color-product-card3;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $bg-pink-hero;
+    border-radius: 50%;
+    border: transparent;
+    background-color: $color-accent-main;
+    cursor: pointer;
+    transition: color $timing-function $transition-duration;
+
+    &:hover,
+    &:focus {
+      color: $color-white;
+    }
+  }
+
+  &__icon-close {
+    fill: currentColor;
+    display: block;
+  }
+
+  &__img {
+    display: block;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  &__products-title {
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-top: 0;
+
+    color: $color-slider-dots;
+  }
+
+  &__products-text {
+    margin-bottom: 0;
+    max-height: 150px;
+    overflow: visible;
+    color: $color-slider-dots;
   }
 }
