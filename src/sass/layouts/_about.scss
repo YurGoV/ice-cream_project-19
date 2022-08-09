@@ -21,6 +21,10 @@ padding-right: 0px;
 }
 }
 
+.about__section {
+background: $bg-section-secondary;
+}
+
 .section__subtitle {
 margin-bottom: 15px;
 
@@ -187,7 +191,7 @@ font-family: 'DM Sans';
 font-weight: 500;
 font-size: 12px;
 line-height: 1.62;
-color: black;
+color: $color-black;
 
 @media screen and (max-width: 320px) {
 width: 220px;
@@ -223,7 +227,7 @@ font-family: 'DM Sans';
 font-weight: 500;
 font-size: 12px;
 line-height: 1.62;
-color: #907E82;
+color: $color-text-main;
 
 @media screen and (max-width: 767px) {
 padding-bottom: 20px;
@@ -252,44 +256,38 @@ display: inline-block;
 padding-top: 14px;
 }
 
+.about__button {
+width: 176px;
+padding: 0;
+height: 44px;
 
-.button-about {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-direction: row;
-padding: 12px 32px;
+border-radius: 22px;
+background-color: $color-white;
+border: none;
 
-&--another {
-padding: 12px 32px;
-    
-display: inline-flex;
-justify-content: center;
-align-items: center;
-    
 font-weight: 700;
 font-size: 14px;
 line-height: 1.28;
 color: $color-accent-main;
-    
-border-radius: 22px;
-border: none;
-    
-background-color: $color-white;
-    
-cursor: pointer;
+transition: color $timing-function $transition-duration, background-color $timing-function $transition-duration, border-radius $timing-function $transition-duration;
+
+@media screen and (min-width: 321px) {
+font-size: 16px;
+line-height: 1.31;;
 }
 
-@media screen and (min-width:321px) { 
-font-size: 16px;
-line-height: 1.31;
-} 
+&:hover,
+&:focus {
+background-color: $btn-hover
+}
+}
 
-&--icon-arrow {
-padding-top: 2px;
-fill: currentColor;
+.about__button--icon {
+fill: none;
+margin-left: 14px;
+
+@media screen and (min-width: 1200px) {
+margin-left: 12px;
 }
 }
 
