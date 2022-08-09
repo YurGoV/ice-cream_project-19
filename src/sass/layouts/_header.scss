@@ -82,13 +82,18 @@
     height: 44px;
 
     border-radius: 22px;
-    background-color: #ffffff;
+    background-color: $color-white;
     border: none;
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
-    color: #D41443;
+    color: $color-accent-main;
+
+    &:hover,
+    &:focus {
+        background-color: $btn-hover
+    }
 
     @media screen and (max-width: 767px) {
         display: none;    
@@ -108,7 +113,12 @@
 }
 
 .header__btn-icon {
+    fill: none;
     margin-left: 14px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
 }
 
 .icon__burger-close {
@@ -140,6 +150,7 @@
 .btn-mobile.is-open .icon__mobile-close {
     opacity: 1;
 }
+
 
 .header__nav-mobile {
     position: fixed;
@@ -190,9 +201,14 @@
 }
 
 .header__btn-mobile-icon {
-    margin-left: 20px;
+    fill: none;
+    margin-left: 28px;
     width: 10px;
     height: 10px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 21px;
+    }
 }
 
 .nav-mobile__list {
