@@ -403,23 +403,33 @@
   align-items: center;
 
   width: 100%;
-  max-height: 609px;
+  max-height: 600px;
   padding: 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  transition: all $timing-function $transition-duration;
 
   @media screen and (min-width: 480px) {
     width: 450px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 528px;
-    max-height: 581px;
+    width: 550px;
+    max-height: 600px;
   }
 
-  background-color: $bg-pink-hero;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  transition: all $timing-function $transition-duration;
+  &--ice-cream {
+    background-color: $bg-pink-hero;
+  }
+
+  &--ice-coffee {
+    background-color: $color-product-card2;
+  }
+
+  &--milkshakes {
+    background-color: $color-product-card3;
+  }
 
   &__btn-close {
     position: absolute;
@@ -433,10 +443,10 @@
     align-items: center;
     justify-content: center;
 
-    color: $color-accent-main;
+    color: $bg-pink-hero;
     border-radius: 50%;
     border: transparent;
-    background-color: $btn-hover;
+    background-color: $color-accent-main;
     cursor: pointer;
     transition: color $timing-function $transition-duration;
 
