@@ -1,0 +1,316 @@
+.section-contacts  {
+    background-image: linear-gradient(to bottom, $color-white 23%, $bg-section-secondary 23%, $bg-section-secondary 100%);
+
+    @media screen and(min-width:768px) {
+        background-image: linear-gradient(to bottom, $color-white 44%, $bg-section-secondary 44%, $bg-section-secondary 100%);
+    }
+
+    @media screen and(min-width:1200px) {
+        background-image: linear-gradient(to bottom, $color-white 22%, $bg-section-secondary 22%, $bg-section-secondary 100%);
+    }
+}
+
+.section-container {
+    @media screen and(min-width:768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and(min-width:768px) {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    &__item {
+        padding: 40px 32px;
+    
+        max-width: 280px;
+    
+        border-radius: 24px;
+
+        background-color: $color-white;
+    
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+        @media screen and(min-width:768px) {
+            max-width: 224px;
+        }
+
+        @media screen and(min-width:1200px) {
+            padding: 40px 40px;
+            max-width: 368px;
+        }
+
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 16px;
+    
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        border-radius: 4px;
+    
+        color: $color-white;
+        background-color: $color-product-card2;
+
+        @media screen and(min-width:768px) {
+            margin-bottom: 32px;
+
+            width: 73px;
+            height: 28px;
+
+            font-size: 16px;
+
+            border-radius: 6px;
+        }
+    
+        &--foodtrack {
+            width: 130px;
+    
+            background-color: $color-product-card3;
+
+            @media screen and(min-width:768px) {
+                          
+                width: 138px;
+            }
+        }
+    }
+
+    &__descr:not(:first-child) {
+        padding-top: 24px;
+
+        @media screen and(min-width:768px) {
+        
+            padding-top: 32px;
+        }
+    }
+
+    &__descr:not(:last-child) {
+        padding-bottom: 24px;
+    
+        border-bottom: 1px solid $color-slider-quotes;
+
+        @media screen and(min-width:768px) {
+            padding-bottom: 32px;
+        }
+    }
+
+    &__name {
+        margin-bottom: 8px;
+    
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+
+        @media screen and(min-width:768px) and (max-width:1199px) {
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        @media screen and(min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.86;
+        }
+
+    }
+
+    &__text {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+    
+        color: $color-text-main;
+
+        @media screen and(min-width:768px) {
+            font-size: 14px;
+            line-height: 1.66;
+        }
+
+        @media screen and(min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.83;
+        }
+    }
+
+    &__link {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+    
+        color: $color-text-main;
+
+        transition: color $transition-duration $timing-function;
+
+        @media screen and(min-width:768px) {
+            font-size: 14px;
+            line-height: 1.83;
+        }
+
+        @media screen and(min-width:1200px) {
+            display: inline-flex;
+            flex-direction: column;
+            font-size: 16px;
+            line-height: 1.83;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-accent-main;
+        }
+    }
+}
+
+.work {
+    &__item:not(:last-child) {
+        padding-bottom: 8px;
+
+        @media screen and(min-width:768px) {
+            padding-bottom: 12px;
+        }
+    }
+
+    &__day {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+
+        @media screen and(min-width:768px) {
+            font-size: 14px;
+        }
+
+        @media screen and(min-width:1200px) {
+            font-size: 16px;
+        }
+    }
+
+    &__time {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        text-transform: uppercase;
+    
+        color: $color-subtitle;
+
+        @media screen and(min-width:768px) {
+            font-size: 14px;
+        }
+
+        @media screen and(min-width:1200px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.contacts-button {
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    @media screen and(min-width:768px) {
+        margin-top: 60px;
+
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    &__location {
+        padding: 12px 17px;
+        
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        color: $color-white;
+        
+        border-radius: 22px;
+        border: none;   
+    
+        background-color: $color-accent-location; 
+
+        cursor: pointer;
+
+        @media screen and(min-width:768px) {
+            padding: 12px 32px;
+        }
+    }
+
+    &__franchise {
+        padding: 12px 32px;
+    
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        color: $color-accent-main;
+    
+        border-radius: 22px;
+        border: none;
+    
+        background-color: $color-white;
+    
+        cursor: pointer;
+
+        @media screen and(min-width:768px) {
+            padding: 12px 43px;
+        }
+    }
+
+    &__icon-locations {
+        margin-left: 8px;
+
+        fill: $color-white;
+
+        @media screen and(min-width:768px) {
+            margin-left: 13px;
+        }
+    }
+
+    &__icon-franchise {
+        margin-left: 8px;
+    
+        fill: $color-accent-main;
+
+        @media screen and(min-width:768px) {
+            margin-left: 13px;
+        }
+    }
+
+}
