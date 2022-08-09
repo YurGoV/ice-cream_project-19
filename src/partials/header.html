@@ -1,14 +1,11 @@
 <header class="header">
 
     <div class="header__nav container">
-        <a href=""><img class="header__logo-mobile" src="./images/logo.svg" alt="Company logo" width="199" height="50"></a>
+        <a class="header__nav-logo" href=""><img src="./images/logo.svg" alt="Company logo" width="199" height="50"></a>
         
-        <button class="btn-mobile" type="button" data-menu-button>
+        <button class="btn-burger js-open-menu" type="button" >
             <svg width="20" height="12" aria-label="Перемикач мобільного меню">
-                <use class="icon__mobile-burger" href="./images/icons.svg#icon-mobile-burger"></use>    
-            </svg>
-            <svg class="icon__burger-close" width="14" height="14" aria-label="Перемикач мобільного меню">
-                <use class="icon__mobile-close" href="./images/icons.svg#icon-mobile-burger-close"></use>
+                <use href="./images/icons.svg#icon-mobile-burger"></use>    
             </svg>
         </button>
 
@@ -16,7 +13,7 @@
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link nav__link--current" href="#">Home</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">How it’s made?</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">How it’s made?</a></li>
                 <li class="nav__item"><a class="nav__link" href="#products">Our products</a></li>
                 <li class="nav__item"><a class="nav__link" href="#contacts">Contact</a></li>
             </ul>
@@ -28,7 +25,14 @@
         </button>
     </div>
 
-    <div class="header__nav-mobile" data-menu>
+    <div class="header__nav-mobile js-menu-container">
+
+        <button class="btn-burger-close js-close-menu" type="button">
+            <svg width="14" height="14">
+                <use href="./images/icons.svg#icon-mobile-burger-close"></use>
+            </svg>
+        </button>
+
         <button class="header__btn-mobile" type="button">Buy now
             <svg class="header__btn-mobile-icon" width="7" height="10">
                 <use href="./images/icons.svg#icon-header-arrow"></use>
