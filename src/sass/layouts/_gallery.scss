@@ -2,6 +2,12 @@
         background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 77%, rgba(255, 245, 246, 1) 78%, rgba(255, 245, 246, 1) 100%);
 }
 
+@media screen and (min-width: 1200px) {
+    .section--gallery {
+       padding: 60px 0px 60px 0px;
+    }
+}
+
 .gallery {
     position: relative;
     width: 320px;
@@ -32,13 +38,13 @@
 .gallery__foto__two {
     position: absolute;
     top: 17%;
-    left: 14%;
+    left: 14.5%;
 }
 
 .gallery__foto__three {
     position: absolute;
     top: 53%;
-    left: 14%;
+    left: 14.5%;
 }
 
 .gallery__foto__four {
