@@ -1,5 +1,5 @@
 .section-contacts  {
-    background-color: $bg-section-secondary;
+    background-image: linear-gradient(to bottom, $color-white 23%, $bg-section-secondary 23%, $bg-section-secondary 100%);
 }
 
 .contacts {
@@ -14,6 +14,8 @@
         max-width: 280px;
     
         border-radius: 24px;
+
+        background-color: $color-white;
     
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     }
@@ -82,6 +84,13 @@
         line-height: 1.5;
     
         color: $color-text-main;
+
+        transition: color $transition-duration $timing-function;
+
+        &:hover,
+        &:focus {
+            color: $color-accent-main;
+        }
     }
 }
 
@@ -145,7 +154,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 1.31;
-        color: $color-accent-location;
+        color: $color-accent-main;
     
         border-radius: 22px;
         border: none;
@@ -153,6 +162,18 @@
         background-color: $color-white;
     
         // cursor: pointer;
+    }
+
+    &__icon-locations {
+        margin-left: 8px;
+
+        fill: $color-white;
+    }
+
+    &__icon-franchise {
+        margin-left: 8px;
+    
+        fill: $color-accent-main;
     }
 
 }
