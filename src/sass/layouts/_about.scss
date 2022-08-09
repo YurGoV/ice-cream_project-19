@@ -253,13 +253,14 @@ padding-top: 14px;
 }
 
 
-.button {
+.button-about {
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 10px;
 flex-direction: row;
+padding: 12px 32px;
 
 &--another {
 padding: 12px 32px;
@@ -288,7 +289,6 @@ line-height: 1.31;
 
 &--icon-arrow {
 padding-top: 2px;
-
 fill: currentColor;
 }
 }
