@@ -1,11 +1,18 @@
 .section-contacts  {
+    padding-top: 0px;
+    padding-bottom: 40px;
+
     background-image: linear-gradient(to bottom, $color-white 23%, $bg-section-secondary 23%, $bg-section-secondary 100%);
 
     @media screen and(min-width:768px) {
+        padding-top: 20px;
         background-image: linear-gradient(to bottom, $color-white 44%, $bg-section-secondary 44%, $bg-section-secondary 100%);
     }
 
     @media screen and(min-width:1200px) {
+        padding-top: 60px;
+        padding-bottom: 120px;
+
         background-image: linear-gradient(to bottom, $color-white 22%, $bg-section-secondary 22%, $bg-section-secondary 100%);
     }
 }
@@ -245,7 +252,7 @@
     }
 
     &__location {
-        padding: 12px 17px;
+        padding: 12px 13px;
         
         display: inline-flex;
         justify-content: center;
@@ -264,9 +271,17 @@
 
         cursor: pointer;
 
+        transition: background-color $transition-duration $timing-function;
+
         @media screen and(min-width:768px) {
-            padding: 12px 32px;
+            padding: 12px 25px;
         }
+
+        &:hover,
+        &:focus {
+            background-color: #B81C42;
+        }
+
     }
 
     &__franchise {
@@ -288,8 +303,15 @@
     
         cursor: pointer;
 
+        transition: background-color $transition-duration $timing-function;
+
         @media screen and(min-width:768px) {
-            padding: 12px 43px;
+            padding: 12px 36px;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $btn-hover;
         }
     }
 
@@ -299,7 +321,7 @@
         fill: $color-white;
 
         @media screen and(min-width:768px) {
-            margin-left: 13px;
+            margin-left: 12px;
         }
     }
 
@@ -309,7 +331,7 @@
         fill: $color-accent-main;
 
         @media screen and(min-width:768px) {
-            margin-left: 13px;
+            margin-left: 12px;
         }
     }
 
