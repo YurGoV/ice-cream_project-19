@@ -1,5 +1,68 @@
+
+// .container {
+//     outline: 1px solid blue;
+    // $container-paddings: 0;
+    // @media screen and (min-width: 768px) {
+    // padding-left: $container-paddings;
+    // padding-right: $container-paddings;
+    // padding-top: 0;
+    // }
+    
+// }
+
+// .advantages-block {
+//     outline: 1px solid blue;
+//     $container-paddings: 0;
+//     @media screen and (min-width: 768px) {
+//     padding-left: $container-paddings;
+//     padding-right: $container-paddings;
+//     }
+// }
+
+
+.card-set {
+    // outline: 1px solid teal;  
+    padding: 0;
+    margin: 0;
+    list-style: none;  
+    // display: flex;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -25px;
+        margin-left: -25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -25px;
+        margin-left: -145px;
+    }
+    
+}
+
+
+.card-set > .advantages--list__items {
+    // outline: 1px solid maroon;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 4 - 25px);
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 3 - 145px);
+        margin-left: 145px;
+        margin-top: 25px;
+      }
+}
+
+
 .advantages {
-    // border: 1px solid red;
+    // outline: 1px solid red;
     margin-left: auto;
     margin-right: auto;
     background: #FFF5F6;
@@ -7,20 +70,53 @@
     &__icon {
         fill: currentColor;
       }
+
+    @media screen and (min-width: 768px) {
+        background: #FFF5F6;
+    }
 }
 
 // .advantages--list {
-    
+//     list-style: none;
 // }
 
-.advantages--list__items:not(:first-child) {
-    padding-top: 32px;
+.advantages--list__items {
+    list-style: none;
 }
 
-// advantages--list__items::before {
-//     content: "";
+@media screen and (max-width: 767px) {
+    .advantages--list__items:not(:first-child) {
+        padding-top: 32px;
+    }
+    
+}
 
-// }
+.advantages--list__items::before {
+    display: inline-block;
+    content: "";
+    // object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.advantages--list__items.icon-milk::before {
+    
+    height: 50px;
+    width: 33px;
+    background-image: url(../images/advantages/icon-milk.png);
+}
+.advantages--list__items.icon-apple::before {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/advantages/icon-apples_mob.png);
+}
+.advantages--list__items.icon-icecreem::before {
+    height: 50px;
+    width: 44px;
+    background-image: url(../images/advantages/icon-icecreem_mob.png);
+}
+
 
 .advantages--list__items--text {
     font-family: 'Titan One';
@@ -33,7 +129,22 @@
     color: #D41443;
     margin-top: 25px;
 
-    width: 230px;
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 4 - 25px);
+        font-size: 48px;
+        line-height: 55px;
+        text-transform: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 4 - 25px);
+        font-size: 58px;
+        line-height: 66px;
+        text-transform: none;
+    }
+
+    // width: 230px;
+    // width: 60%;
 }
 
 .advantages--list__items--descr {
@@ -44,10 +155,21 @@
     line-height: 170%;
     color: #000000;
     margin-top: 25px;
-   // width: 230px;
+//    width: 230px;
+// змінити для планшету - 165 (середня відстань 25)
     width: 60%;
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        font-size: 14px;
+        line-height: 174%;
+
+    }
 }
 
-.advantages--list__descr:not(:last-child) {
-    padding-bottom: 30px;
+
+@media screen and (max-width: 767px) {
+    .advantages--list__descr:not(:last-child) {
+        padding-bottom: 30px;
+    }
 }
+
