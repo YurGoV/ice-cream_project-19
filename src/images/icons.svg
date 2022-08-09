@@ -36,5 +36,8 @@
     <symbol id="icon-close-modal" viewBox="0 0 32 32">
       <path d="M31.439 3.166l-3.166-3.166-12.553 12.553-12.553-12.553-3.166 3.166 12.553 12.553-12.553 12.553 3.166 3.166 12.553-12.553 12.553 12.553 3.166-3.166-12.553-12.553 12.553-12.553z"></path>
     </symbol>
+    <symbol id="icon-header-arrow" viewBox="0 0 6 10">
+      <path d="M1 1L5 5L1 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
   </defs>
 </svg>
