@@ -13,7 +13,7 @@
     align-items: center;
     text-align: center;
     @media screen and (max-width: 767px) {
-        max-width: 320px;
+        min-width: 320px;
         padding-left: 20px;
     }
     @media screen and (min-width: 768px) {
@@ -22,13 +22,23 @@
         padding-right: 32px;
         height: 416px;
     }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 664px;
+        outline: 1px solid green;
+    }
 }
 .title-box {
     position: absolute;
     z-index: 3;
-    top: 194px;
+    bottom: 202px;
     @media screen and (min-width: 768px) {
-        top: 102px;
+        bottom: 234px;
+    }
+    @media screen and (min-width: 1200px) {
+        bottom: 380px;
     }
 }
 .hero__title {
@@ -45,6 +55,10 @@
         font-size: 22px;
         line-height: 1.12em;
     }
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+    }
+    
 }
 .hero__title--large {
     font-size: 48px;
@@ -57,6 +71,10 @@
         font-size: 34px;
         line-height: 0.9em;
     }
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+    }
+    
 }
 .icecream:before {
     content: "";
@@ -67,12 +85,18 @@
     background: $color-subtitle;
     
     @media screen and (max-width: 767px) {
-        left: 36px;
+        right: -62px;
         bottom: 75px;
     }
     @media screen and (min-width: 768px) {
         right: 185px;
         bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 534px;
+        height: 534px;
+        right: 149px;
+        bottom: 76px;
     }
 }
 .icecream__image {
@@ -83,6 +107,9 @@
     @media screen and (min-width: 768px) {
         right: 303px;
     }
+    @media screen and (min-width: 1200px) {
+        right: 328px;
+    }
 }
 .button-set {
     position: absolute;
@@ -92,11 +119,14 @@
     @media screen and (min-width: 768px) {
         bottom: 190px;
     }
+    @media screen and (min-width: 1200px) {
+        bottom: 316px;
+    }
 }
 
 .button-set__prod {
     margin-right: 8px;
-    font-family: var(--font_sec);
+    font-family: $font-family;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
@@ -108,6 +138,11 @@
     background: $color-accent-main;
     border: 1px solid transparent;
     border-radius: 20px;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        width: 138px;
+        height: 40px;
+    }
 }
 
 .button-set__how {
@@ -123,6 +158,11 @@
     background: $color-white;
     border: 1px solid transparent;
     border-radius: 20px;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        width: 138px;
+        height: 40px;
+    }
 }
 
 .hero__milk {
@@ -133,6 +173,10 @@
     bottom: 16px;
     @media screen and (max-width: 767px) {
         display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        left: 25px;
+        bottom: 57px;
     }
 }
 .milk__description {
@@ -145,13 +189,24 @@
     font-size: 8px;
     line-height: 1.5;
     color: $color-white;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        width: 200px;
+    }
 }
 .milk__link {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     margin-top: 7px;
     border-radius: 50%;
     width: 18px;
     height: 18px;
     background-color: $color-white;
+    @media screen and (min-width: 1200px) {
+        width: 26px;
+        height: 26px;
+    }
 }
 .milk__arrow {
     fill: $color-accent-main;
@@ -167,6 +222,9 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
+    @media screen and (min-width: 1200px) {
+        right: 16px;
+    }
 }
 .hero-list {
     z-index: 3;
@@ -175,7 +233,10 @@
     bottom: 221px;
     @media screen and (max-width: 767px) {
         display: none;
-     }
+    }
+    @media screen and (min-width: 1200px) {
+        bottom: 344px;
+    }
 }
 .hero-list__item {
     position: relative;
@@ -185,6 +246,10 @@
     line-height: 1.18em;
     color: $color-accent-main;
     text-align: right;
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+        line-height: 1.2em;
+    }
 }
 .hero-list__item-small {
     font-family: $font-family;
@@ -197,6 +262,13 @@
 
     &:nth-child(2) {
         margin-bottom: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.4em;
+        &:nth-child(2) {
+            margin-bottom: 15px;
+        }
     }
 }
 
@@ -215,5 +287,11 @@
     @media screen and (min-width: 768px) {
         right: -8px;
         bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 30px;
+        height: 30px;
+        right: -16px;
+        bottom: 30px;
     }
 }
