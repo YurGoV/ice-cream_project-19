@@ -3,7 +3,7 @@
 
   &__section-title {
     margin-top: 15px;
-    margin-bottom: 140px;
+    margin-bottom: 148px;
 
     @media screen and (min-width: 768px) {
       margin-top: 18px;
@@ -13,6 +13,10 @@
       margin-top: 16px;
       margin-bottom: 281px;
     }
+  }
+
+  &__section-subtitle.section__subtitle {
+    margin-bottom: 0;
   }
 
   &__title {

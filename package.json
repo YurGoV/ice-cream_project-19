@@ -18,6 +18,7 @@
     "url": "https://github.com/YurGoV/ice-cream_project-19/issues"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
