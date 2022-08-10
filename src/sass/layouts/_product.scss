@@ -1,8 +1,8 @@
 .products {
   background-color: $color-white;
 
-  &__container{
-    max-width: 320px;
+  &__container {
+    max-width: 480px;
 
     @media screen and (min-width: 768px) {
       max-width: 768px;
@@ -21,6 +21,7 @@
       margin-top: 18px;
       margin-bottom: 158px;
     }
+
     @media screen and (min-width: 1200px) {
       margin-top: 16px;
       margin-bottom: 281px;
@@ -33,7 +34,6 @@
 
   &__title {
     position: relative;
-    padding-top: 160px;
     margin-bottom: 70px;
 
     font-family: $font-family-second;
@@ -46,16 +46,12 @@
 
     color: $color-white;
 
-    @media screen and (min-width: 768px) {
-      padding-top: 118px;
-    }
-
     @media screen and (min-width: 1200px) {
-      padding-top: 165px;
       font-size: 30px;
       line-height: calc(34 / 30);
     }
   }
+
   &__title::after {
     content: '';
     position: absolute;
@@ -73,7 +69,7 @@
 
   &__text {
     margin-bottom: 32px;
-    max-height: 124px;
+    height: 124px;
     overflow: hidden;
 
     font-family: $font-family;
@@ -87,13 +83,13 @@
 
     @media screen and (min-width: 768px) {
       line-height: calc(24.6 / 14);
-      max-height: 150px;
+      height: 150px;
     }
 
     @media screen and (min-width: 1200px) {
       margin-bottom: 60px;
 
-      max-height: 106px;
+      height: 106px;
       font-size: 16px;
       line-height: calc(28 / 16);
     }
@@ -116,7 +112,6 @@
   }
 
   &__button {
-    margin-bottom: 40px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -140,10 +135,6 @@
       color: $color-white;
       background-color: $color-accent-main;
     }
-
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 60px;
-    }
   }
 
   &__icon {
@@ -154,7 +145,7 @@
 .products__item {
   position: relative;
   max-height: 489px;
-  padding: 0 40px;
+  padding: 160px 40px 40px;
 
   text-align: center;
 
@@ -163,13 +154,13 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - (3 - 1) * 16px) / 3);
     max-height: 473px;
-    padding: 0 32px;
+    padding: 118px 32px 40px;
   }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - (3 - 1) * 32px) / 3);
     max-height: 535px;
-    padding: 0 63px;
+    padding: 165px 63px 60px;
   }
 
   &--ice-cream {
@@ -191,14 +182,14 @@
     background-repeat: no-repeat;
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url('/src/images/product/product-1_mob@2x.png');
     }
 
     @media screen and (min-device-pixel-ratio: 3),
-      screen and (min-resolution: 288dpi),
-      screen and (min-resolution: 3dppx) {
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
       background-image: url('/src/images/product/product-1_mob@3x.png');
     }
 
@@ -209,14 +200,14 @@
       background-image: url('/src/images/product/product-1_tab.png');
 
       @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-1_tab@2x.png');
       }
 
       @media screen and (min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
         background-image: url('/src/images/product/product-1_tab@3x.png');
       }
     }
@@ -228,14 +219,14 @@
       background-image: url('/src/images/product/product-1_desk.png');
 
       @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-1_desk@2x.png');
       }
 
       @media screen and (min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
         background-image: url('/src/images/product/product-1_desk@3x.png');
       }
     }
@@ -260,14 +251,14 @@
     background-repeat: no-repeat;
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url('/src/images/product/product-2_mob@2x.png');
     }
 
     @media screen and (min-device-pixel-ratio: 3),
-      screen and (min-resolution: 288dpi),
-      screen and (min-resolution: 3dppx) {
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
       background-image: url('/src/images/product/product-2_mob@3x.png');
     }
 
@@ -278,14 +269,14 @@
       background-image: url('/src/images/product/product-2_tab.png');
 
       @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-2_tab@2x.png');
       }
 
       @media screen and (min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
         background-image: url('/src/images/product/product-2_tab@3x.png');
       }
     }
@@ -297,14 +288,14 @@
       background-image: url('/src/images/product/product-2_desk.png');
 
       @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-2_desk@2x.png');
       }
 
       @media screen and (min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
         background-image: url('/src/images/product/product-2_desk@3x.png');
       }
     }
@@ -329,14 +320,14 @@
     background-repeat: no-repeat;
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url('/src/images/product/product-3_mob@2x.png');
     }
 
     @media screen and (min-device-pixel-ratio: 3),
-      screen and (min-resolution: 288dpi),
-      screen and (min-resolution: 3dppx) {
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
       background-image: url('/src/images/product/product-3_mob@3x.png');
     }
 
@@ -347,14 +338,14 @@
       background-image: url('/src/images/product/product-3_tab.png');
 
       @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-3_tab@2x.png');
       }
 
       @media screen and (min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
         background-image: url('/src/images/product/product-3_tab@3x.png');
       }
     }
@@ -366,14 +357,14 @@
       background-image: url('/src/images/product/product-3_desk.png');
 
       @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
         background-image: url('/src/images/product/product-3_desk@2x.png');
       }
 
       @media screen and (min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
         background-image: url('/src/images/product/product-3_desk@3x.png');
       }
     }
