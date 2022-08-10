@@ -1,6 +1,18 @@
 .products {
   background-color: $color-white;
 
+  &__container{
+    max-width: 320px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+
   &__section-title {
     margin-top: 15px;
     margin-bottom: 148px;
@@ -476,7 +488,20 @@
     margin-top: 10px;
     padding-top: 0;
 
+    font-family: $font-family-second;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
     color: $color-slider-dots;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: calc(34 / 30);
+    }
   }
 
   &__products-text {
