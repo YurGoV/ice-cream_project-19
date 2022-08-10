@@ -1,5 +1,15 @@
 .reviews {
-  background-color: $bg-section-main;
+  background-color: $color-white;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 120px;
+  }
 }
 
 .reviews__title {
@@ -9,11 +19,25 @@
 .reviews__customer-photo {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 63px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
 }
 
 .reviews__customer-text {
-  padding-bottom: 62px;
+  position: relative;
+  z-index: 1;
+
+  padding-left: 15px;
+  padding-right: 8px;
+  margin-top: 43px;
+  margin-bottom: 17px;
 
   font-family: 'DM Sans';
   font-style: normal;
@@ -28,11 +52,45 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 216%;
+    margin-bottom: 44px;
+    margin-top: 37px;
+    padding-left: 45px;
+    padding-right: 49px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 186%;
+    margin-bottom: 39px;
+    margin-top: 47px;
+    padding-left: 36px;
+    padding-right: 35px;
+  }
+}
+
+.reviews__text-background {
+  width: 180px;
+  height: 217px;
+
+  margin-left: auto;
+  margin-right: auto;
+  // padding-bottom: 1px;
+
+  background: repeating-linear-gradient(
+    #fafafa 0px,
+    #fafafa 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
+
+  @media screen and (min-width: 768px) {
+    width: 608px;
+    height: 108px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 822px;
+    height: 75px;
   }
 }
 
@@ -48,13 +106,21 @@
   left: 50%;
   bottom: 0 px;
 
-  margin-top: 33px;
+  margin-top: 42px;
 
   display: block;
 
   background-color: $color-slider-dots;
 
   box-shadow: -20px 0 0 $color-slider-dots, 20px 0 0 $color-slider-dots;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 48px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 55px;
+  }
 }
 
 .reviews__customer-name {
@@ -63,9 +129,12 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 186%;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
   color: $color-black;
+
+  margin-top: 53px;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -79,32 +148,74 @@
 .reviews__wrapper {
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (max-width: 767px) {
     width: 280px;
     height: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   @media screen and (min-width: 768px) {
     width: 620px;
-    padding-left: 51px;
-    padding-right: 55px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 620px;
-    padding-left: 0px;
-    padding-right: 0px;
+    width: 968px;
+    height: 138px;
   }
 }
 
-// .reviews__switch {
-//   cursor: pointer;
-//   display: inline-block;
-//   width: 12px;
-//   height: 12px;
-//   border-radius: 50%;
-//   background-color: #d9d9d9;
-// }
+.reviews__text-wrapper {
+  width: 280px;
+  height: 308px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: $bg-section-comment;
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    height: 164px;
+    padding-bottom: 35px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+    height: 138px;
+    padding-bottom: 30px;
+  }
+}
+
+.reviews__customer-text::before {
+  content: '';
+  width: 54px;
+  height: 40px;
+  z-index: -1;
+
+  position: absolute;
+  display: block;
+  top: -20px;
+  left: 5px;
+  background-image: url('/src/images/customers/quotes-mob.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    background-image: url('/src/images/customers/quotes-tab.png');
+
+    width: 60px;
+    height: 40px;
+    top: -15px;
+    left: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('/src/images/customers/quotes.png');
+    width: 54px;
+    height: 40px;
+    top: -15px;
+    left: 0;
+  }
+}
