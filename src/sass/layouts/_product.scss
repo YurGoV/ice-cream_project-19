@@ -486,3 +486,8 @@
     color: $color-slider-dots;
   }
 }
+
+.animate__heartBeat {
+  animation: heartBeat;
+  animation-duration: 4s;
+}
