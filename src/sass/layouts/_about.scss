@@ -56,7 +56,7 @@ line-height: 1.13;
 width: 100%;
 
 padding: 0px;
-margin-bottom: 40px;
+margin-bottom: 32px;
 margin-left: auto;
 margin-right: auto;
 
@@ -64,6 +64,10 @@ margin-right: auto;
 @media screen and (max-width: 320px) {
 width: 200px;
 }
+
+@media screen and (min-width:768px) { 
+margin-bottom: 40px;
+} 
 
 @media screen and (min-width:1200px) { 
 margin-bottom: 60px;
@@ -117,7 +121,7 @@ width: 100%;
 height: 100%;
 
 @media screen and (max-width: 767px) {
-padding-bottom: 25px;
+margin-bottom: 25px;
 }
 
 @media screen and (min-width:768px) { 
@@ -143,7 +147,7 @@ margin-left: 32px;
 }
 
 @media screen and (min-width:1200px) { 
-margin-left: 100px;
+margin-left: 99px;
 
 background-image: none;
 }
@@ -151,11 +155,15 @@ background-image: none;
 
 .about__background {
 width: 100%;
+background-size: contain;
+background-repeat: no-repeat;
+background-position-y: 45%;
 
 background-image: url(/src/images/about/about-2_mob.png);
 
-@media screen and (max-width:320px) { 
+@media screen and (min-width:413px) { 
 background-repeat: no-repeat;
+background-size: cover;
 background-position-y: 45%;
 background-image: url(/src/images/about/about-2_mob.png);
 
@@ -175,7 +183,7 @@ background-size: contain;
 }
 }
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 768px) {
 background-image: none;
 }
 
@@ -201,14 +209,15 @@ width: 220px;
 margin-bottom: 25px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 321px) {
 margin-bottom: 25px;
+// width: 334px;
 }
 
 @media screen and (min-width:768px) { 
 width: 334px;
 
-margin-bottom: 25px;
+margin-bottom: 20px;
 
 font-size: 14px;
 line-height: 1.76; 
@@ -236,7 +245,7 @@ margin-bottom: 20px;
 }
 
 @media screen and (min-width:768px) { 
-margin-bottom: 25px;
+margin-bottom: 40px;
 
 font-size: 14px;
 line-height: 1.76;
@@ -255,7 +264,15 @@ letter-spacing: 0.04em;
 
 .about__span {
 display: inline-block;
-margin-top: 14px;
+margin-top: 10px;
+
+@media screen and (min-width:768px) { 
+margin-top: 10px;
+}
+
+@media screen and (min-width:1200px) { 
+margin-top: 27px;
+}
 }
 
 .about__button {
