@@ -1,25 +1,19 @@
 <section class="section reviews">
   <div class="container">
     <h2 class="reviews__title">Customer Reviews</h2>
-    <div class="reviews__slider">
+    <div class="reviews__slider one-time">
       <div class="reviews__wrapper slide slide-one">
         <picture>
           <source
             media="(min-width: 320px)"
-            srcset="
-              ./images/customers/customer-1.png    1x,
-              ./images/customers/customer-1@2x.png 2x,
-              ./images/customers/customer-1@3x.png 3x
-            "
-            type="image/png"
-          />
+            srcset="./images/customers/customer-1.png 1x, ./images/customers/customer-1@2x.png 2x, ./images/customers/customer-1@3x.png 3x"
+            type="image/png"/>
           <img
             class="reviews__customer-photo"
             src="./images/customers/customer-1.png"
-            alt=""
+            alt="Emily"
           />
         </picture>
-
         <div class="reviews__text-wrapper">
           <div class="reviews__text-background">
             <p class="reviews__customer-text">
@@ -29,8 +23,52 @@
             </p>
           </div>
         </div>
-
         <p class="reviews__customer-name">Emily, Los Angeles</p>
+      </div>
+      <div class="reviews__wrapper slide slide-two">
+        <picture>
+          <source
+            media="(min-width: 320px)"
+            srcset="./images/customers/customer-2.png 1x, ./images/customers/customer-2@2x.png 2x, ./images/customers/customer-2@3x.png 3x"
+            type="image/png"/>
+          <img
+            class="reviews__customer-photo"
+            src="./images/customers/customer-2.png"
+            alt="Lora"
+          />
+        </picture>
+        <div class="reviews__text-wrapper">
+          <div class="reviews__text-background">
+            <p class="reviews__customer-text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+        <p class="reviews__customer-name">Lora, Chicago</p>
+      </div>
+      <div class="reviews__wrapper slide slide-three">
+        <picture>
+          <source
+            media="(min-width: 320px)"srcset="./images/customers/customer-3.png 1x, ./images/customers/customer-3@2x.png 2x, ./images/customers/customer-3@3x.png 3x"
+            type="image/png"/>
+          <img
+            class="reviews__customer-photo"
+            src="./images/customers/customer-3.png"
+            alt="Mary"
+          />
+        </picture>
+        <div class="reviews__text-wrapper">
+          <div class="reviews__text-background">
+            <p class="reviews__customer-text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+        <p class="reviews__customer-name">Mary, New York</p>
       </div>
     </div>
     <!-- <div class="reviews__wrapper slide slide-one">
@@ -94,12 +132,11 @@
 
         <p class="reviews__customer-name">Emily, Los Angeles</p>
       </div> -->
-      
+
       <!-- <ul class="reviews__list">
         <li class="reviews__item"><button class="reviews__button"></button></li>
         <li class="reviews__item"><button class="reviews__button"></button></li>
         <li class="reviews__item"><button class="reviews__button"></button></li>
       </ul> -->
-    </div>
   </div>
 </section>
