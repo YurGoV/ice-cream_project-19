@@ -36,10 +36,8 @@
 
   padding-left: 15px;
   padding-right: 8px;
-  margin-top: 43px;
-  margin-bottom: 17px;
+  padding-bottom: 9px;
 
-  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -47,6 +45,7 @@
   text-align: center;
   letter-spacing: 0.04em;
 
+  background: repeating-linear-gradient(#FAFAFA, #FAFAFA 29px, #E1E1E1 20px, #E1E1E1 30px);
   color: $color-black;
 
   @media screen and (min-width: 768px) {
@@ -163,19 +162,17 @@
 
   @media screen and (min-width: 1200px) {
     width: 968px;
-    height: 138px;
   }
 }
 
 .reviews__text-wrapper {
   z-index: 3;
-  margin-right: 58px;
-  margin-left: 58px;
   // width: 280px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding: 43px 50px 17px;
 
   background-color: $bg-section-comment;
 
