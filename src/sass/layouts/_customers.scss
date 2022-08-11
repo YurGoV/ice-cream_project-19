@@ -233,5 +233,15 @@
 .slick-dots li.slick-active button:before {
   background-image: url(../images/customers/dots.png);
   background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+  background-size: contain;
+  width: 12px;
+  height: 17px;
+}
 
+.slick-dots li button:before {
+  font-size: 12px;
+  width: 1px;
+  height: 17px;
 }
