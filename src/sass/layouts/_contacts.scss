@@ -4,12 +4,12 @@
 
     background-image: linear-gradient(to bottom, $color-white 23%, $bg-section-secondary 23%, $bg-section-secondary 100%);
 
-    @media screen and(min-width:768px) {
+    @media screen and (min-width:768px) {
         padding-top: 20px;
         background-image: linear-gradient(to bottom, $color-white 44%, $bg-section-secondary 44%, $bg-section-secondary 100%);
     }
 
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width:1200px) {
         padding-top: 60px;
         padding-bottom: 60px;
 
@@ -18,11 +18,16 @@
 }
 
 .section-container {
-    @media screen and(min-width:768px) {
+    max-width: 480px;
+    @media screen and (min-width:768px) {
+        max-width: 768px;
         padding-left: 16px;
         padding-right: 16px;
     }
 
+    @media screen and (min-width:1200px) {
+        max-width: 1200px;
+    }
 }
 
 .contacts {
@@ -33,7 +38,7 @@
     align-items: center;
     gap: 20px;
 
-    @media screen and(min-width:768px) {
+    @media screen and (min-width:768px) {
         flex-direction: row;
         gap: 32px;
     }
@@ -41,7 +46,7 @@
     &__item {
         padding: 40px 32px;
     
-        max-width: 280px;
+        width: 100%;
     
         border-radius: 24px;
 
@@ -49,11 +54,11 @@
     
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
-        @media screen and(min-width:768px) {
+        @media screen and (min-width:768px) {
             max-width: 224px;
         }
 
-        @media screen and(min-width:1200px) {
+        @media screen and (min-width:1200px) {
             padding: 40px 40px;
             max-width: 368px;
         }
@@ -81,7 +86,7 @@
         color: $color-white;
         background-color: $color-product-card2;
 
-        @media screen and(min-width:768px) {
+        @media screen and (min-width:768px) {
             margin-bottom: 32px;
 
             width: 73px;
@@ -107,7 +112,7 @@
     &__descr:not(:first-child) {
         padding-top: 24px;
 
-        @media screen and(min-width:768px) {
+        @media screen and (min-width:768px) {
         
             padding-top: 32px;
         }
@@ -118,7 +123,7 @@
     
         border-bottom: 1px solid $color-slider-quotes;
 
-        @media screen and(min-width:768px) {
+        @media screen and (min-width:768px) {
             padding-bottom: 32px;
         }
     }
@@ -133,12 +138,12 @@
         letter-spacing: 0.04em;
         color: $color-black;
 
-        @media screen and(min-width:768px) and (max-width:1199px) {
+        @media screen and (min-width:768px) and (max-width:1199px) {
             margin-bottom: 12px;
             font-size: 14px;
         }
 
-        @media screen and(min-width:1200px) {
+        @media screen and (min-width:1200px) {
             font-size: 16px;
             line-height: 1.86;
         }
@@ -153,15 +158,20 @@
     
         color: $color-text-main;
 
-        @media screen and(min-width:768px) {
+        @media screen and (min-width:768px) {
             font-size: 14px;
             line-height: 1.66;
         }
 
-        @media screen and(min-width:1200px) {
+        @media screen and (min-width:1200px) {
             font-size: 16px;
             line-height: 1.83;
         }
+    }
+
+    &__links {
+        display: inline-flex;
+        flex-direction: column;
     }
 
     &__link {
@@ -180,8 +190,6 @@
         }
 
         @media screen and(min-width:1200px) {
-            display: inline-flex;
-            flex-direction: column;
             font-size: 16px;
             line-height: 1.83;
         }
