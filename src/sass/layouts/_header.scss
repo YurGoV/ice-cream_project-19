@@ -226,7 +226,8 @@
 
 .nav-mobile__item {
     height: 42px;
-    border: 1px solid #E18298;
+    border-top: 1px solid #E18298;
+    border-bottom: 1px solid #E18298;
     padding-left: 20px;
     display: flex;
     align-items: center;
