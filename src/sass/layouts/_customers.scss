@@ -229,3 +229,9 @@
   background-color: green;
   color: red($color: red);
 }
+
+.slick-dots li.slick-active button:before {
+  background-image: url(../images/customers/dots.png);
+  background-repeat: no-repeat;
+
+}
