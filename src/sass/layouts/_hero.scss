@@ -57,23 +57,17 @@
     @media screen and (min-width: 1200px) {
         font-size: 38px;
     }
-    
 }
 .hero__title--large {
     font-size: 48px;
     line-height: 0.9em;
     color: $color-accent-main;
-    @media screen and (max-width: 767px) {
-        max-width: 218px;
-    }
     @media screen and (min-width: 768px) {
         font-size: 34px;
-        line-height: 0.9em;
     }
     @media screen and (min-width: 1200px) {
         font-size: 58px;
     }
-    
 }
 .icecream:before {
     content: "";
@@ -88,6 +82,8 @@
         bottom: 75px;
     }
     @media screen and (min-width: 768px) {
+        width: 335px;
+        height: 333px;
         right: 185px;
         bottom: 40px;
     }
@@ -122,8 +118,7 @@
         bottom: 316px;
     }
 }
-
-.button-set__prod {
+.button-set__link-prod {
     margin-right: 8px;
     width: 62.4px;
     height: 24px;
@@ -134,6 +129,11 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: $color-white;
     cursor: pointer;
     &:hover,
     &:focus {
@@ -145,22 +145,10 @@
         font-size: 14px;
         width: 107px;
         height: 40px;
+        margin-right: 12px;
     }
 }
-.button-set__link-prod {
-    font-family: $font-family;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 10px;
-    text-align: center;
-    justify-content: center;
-    color: $color-white;
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-    }
-}
-.button-set__how {
+.button-set__link-how {
     display: flex;
     align-items: center;
     text-align: center;
@@ -171,6 +159,12 @@
     border: 1px solid transparent;
     border-radius: 20px;
     cursor: pointer;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.2em;
+    color: $color-accent-main;
     &:hover,
     &:focus {
         background: $btn-hover;
@@ -180,21 +174,9 @@
     @media screen and (min-width: 1200px) {
         width: 138px;
         height: 40px;
-    }
-}
-.button-set__link-how {
-    font-family: $font-family;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 10px;
-    text-align: center;
-    color: $color-accent-main;
-    @media screen and (min-width: 1200px) {
         font-size: 14px;
     }
 }
-
 .hero__milk {
     position: absolute;
     justify-content: left;
@@ -217,7 +199,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
-    line-height: 1.5;
+    line-height: 1.5em;
     color: $color-white;
     @media screen and (min-width: 1200px) {
         font-size: 14px;
@@ -267,6 +249,7 @@
     }
     @media screen and (min-width: 1200px) {
         bottom: 344px;
+        right: 32px;
     }
 }
 .hero-list__item {
@@ -302,7 +285,6 @@
         }
     }
 }
-
 .hero-list__item:after {
     z-index: -1;
     content: "";
