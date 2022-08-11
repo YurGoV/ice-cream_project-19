@@ -85,6 +85,43 @@
           <svg class="modal__icon-close" width="14px" height="14px">
             <use href="./images/icons.svg#icon-close-modal"></use>
           </svg>
+        </button>
+        <form class="buy-form" name="buy-form">
+          <p class="buy-form__heading">Ice cream made with passion</p>
+          <div class="buy-form__field">
+            <label class="buy-form__label" for="name">Name</label>
+            <input class="buy-form__input" type="text" name="user-name" id="name">
+          </div>
+          <div class="buy-form__field">
+            <label class="buy-form__label" for="tel">Phone</label>
+            <input class="buy-form__input" type="tel" name="tel" id="tel">
+          </div>
+          <div class="buy-form__field">
+            <label class="buy-form__label" for="email">Email</label>
+            <input class="buy-form__input" type="email" name="email" id="email">
+          </div>
+          <div>
+            <p class="buy-form__checkbox-heading">What product would you want?</p>
+            <label class="buy-form__checkbox">
+              <input type="checkbox" name="hobby" value="Ice cream"/>
+              Ice cream
+            </label>
+            <label class="buy-form__checkbox">
+              <input type="checkbox" name="hobby" value="Ice coffee"/>
+              Ice coffee
+            </label>
+            <label class="buy-form__checkbox">
+              <input type="checkbox" name="hobby" value="Milkshakes" />
+              Milkshakes
+            </label>
+          </div>
+          <div class="buy-form__field-comment">
+            <label class="buy-form__label" for="Comment">Want to clarify something?</label>
+            <textarea class="buy-form__comment" name="Comment" id="Comment" cols="30" rows="10"
+              placeholder="Enter the text"></textarea>
+          </div>
+          <button class="buy-form__btn" type="submit">Ready to enjoy</button>
+        </form>
       </div>
     </div>
 
