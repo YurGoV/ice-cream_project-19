@@ -111,6 +111,41 @@
     }
 }
 
+//* модальное окно главной кнопки "Buy now" *//
+
+.header__backdrop-modal {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 120;
+
+    background-color: #ffb8ca7d;
+}
+
+.header__backdrop-modal.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.header__modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 450px;
+    height: 450px;
+
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 0px 46px 2px #F85389;
+}
+
 
 //* мобильное меню (кнопка открытия) *//
 
@@ -192,7 +227,7 @@
 
 //* мобильное меню (навигация) *//
 
-.header__backdrop {
+.header__backdrop-mobile {
     position: fixed;
     right: 0;
     top: 0px;
@@ -226,7 +261,7 @@
     }
 }
 
-.header__backdrop.is-open {
+.header__backdrop-mobile.is-open {
     transform: translateX(0);
 }
 
