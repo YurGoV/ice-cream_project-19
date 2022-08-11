@@ -131,6 +131,7 @@
         font-size: 12px;
         line-height: 1.86;
         letter-spacing: 0.04em;
+        color: $color-black;
 
         @media screen and(min-width:768px) and (max-width:1199px) {
             margin-bottom: 12px;
@@ -206,6 +207,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 1.86;
+        color: $color-black;
 
         @media screen and(min-width:768px) {
             font-size: 14px;
