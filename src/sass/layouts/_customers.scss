@@ -48,21 +48,20 @@
   color: $color-black;
 
   @media screen and (min-width: 768px) {
+    padding-right: 49px;
+    padding-left: 44px;
+    padding-bottom: 0;
+
+    font-weight: 500;
     font-size: 14px;
     line-height: 216%;
-    margin-bottom: 44px;
-    margin-top: 37px;
-    padding-left: 45px;
-    padding-right: 49px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 16px;
-    line-height: 186%;
-    margin-bottom: 39px;
-    margin-top: 47px;
-    padding-left: 36px;
-    padding-right: 35px;
+    
   }
 }
 
@@ -176,16 +175,13 @@
   background-color: $bg-section-comment;
 
   @media screen and (min-width: 768px) {
-  width: 620px;
-  margin-right: 34px;
-  margin-left: 34px;
-  padding-bottom: 35px;
+    width: 620px;
+    margin: 0 auto;
+    padding: 20px 6px 36px
   }
 
   @media screen and (min-width: 1200px) {
-  padding-bottom: 30px;
-  width: 968px;
-  height: 300px;
+  
   }
 }
 
