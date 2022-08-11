@@ -28,19 +28,6 @@ background-image: url(/src/images/about/about-1_desk.png);
     background-size: cover;
     background-image: url(/src/images/about/about-1_desk.png);
 }
-
-// Retina desk
-@media (min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-background-image: url(/src/images/about/about-1_desk@2x.png);
-}
-
-@media (min-device-pixel-ratio: 3),
- (min-resolution: 288dpi),
- (min-resolution: 3dppx) {
-background-image: url(/src/images/about/about-1_desk@3x.png);
-}
 }
 
 .about {
@@ -189,14 +176,14 @@ background-image: url(/src/images/about/about-2_mob.png);
  (min-resolution: 192dpi),
  (min-resolution: 2dppx) {
 background-image: url(/src/images/about/about-2_mob@2x.png);
-background-size: contain;
+background-size: cover;
 }
 
 @media (min-device-pixel-ratio: 3),
  (min-resolution: 288dpi),
  (min-resolution: 3dppx) {
 background-image: url(/src/images/about/about-2_mob@3x.png);
-background-size: contain;
+background-size: cover;
 }
 }
 
