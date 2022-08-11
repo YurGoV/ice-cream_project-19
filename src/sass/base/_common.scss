@@ -1,0 +1,12 @@
+body {
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1.75;
+  color: $color-text-main;
+  background-color: $color-white;
+  margin: 0;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
