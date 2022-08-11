@@ -1,13 +1,11 @@
 
-@import './utils/reset';
 @import './utils/variables';
 
-// строка нижче імпортує: @import '~node_modules/modern-normalize/modern-normalize.css';
-// проте як розумію з відео - зміст node_modules у кожного свій. Тобто мабуть нормалізацію треба добавляти додатково?
-@import './components/common';
+@import './base/reset';
+@import './base/common';
 
-// стартова хтмл-ка проекту, видаляємо (сам файл поки що залишаю)
-// @import './example';
+@import './components/section';
+
 @import './components/container';
 @import './components/headers2styles';
 @import './components/button';
