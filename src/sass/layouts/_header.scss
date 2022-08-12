@@ -136,11 +136,13 @@
 
 .header__modal {
     position: relative;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     max-width: 450px;
+    max-height: 100vh;
+    overflow: auto;
 
     background-color: #FFFFFF;
     border-radius: 12px;
