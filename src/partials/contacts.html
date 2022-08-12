@@ -102,7 +102,7 @@
       <button
         class="contacts-button__location"
         type="button"
-        contacts-modal-open
+        data-modal-contacts-open
       >
         Our Locations
         <svg class="contacts-button__icon-locations" width="20" height="20">
@@ -120,9 +120,9 @@
 
   <!-- Modal -->
 
-  <div class="contacts__backdrop is-hidden" contacts-modal>
+  <div class="contacts__backdrop is-hidden" data-modal-contacts>
     <div class="contacts-modal">
-      <button class="contacts-modal__btn" contacts-modal-close>
+      <button class="contacts-modal__btn" data-modal-contacts-close>
         <svg class="modal__icon-close" width="20px" height="20px">
           <use href="./images/icons.svg#icon-close-modal"></use>
         </svg>
