@@ -24,9 +24,9 @@ background-image: url(/src/images/about/about-1_desk.png);
 }
 
 @media screen and (min-width: 1800px) {
-    background-position: center;
-    background-size: cover;
-    background-image: url(/src/images/about/about-1_desk.png);
+background-position: center;
+background-size: cover;
+background-image: url(/src/images/about/about-1_desk.png);
 }
 }
 
@@ -104,28 +104,20 @@ margin-bottom: 60px;
 .about__list {
 width: 100%;
 
-@media screen and (min-width: 1200px) {
-display: flex;
-
 @media screen and (min-width:768px) { 
 display: flex; 
 } 
-}
 }
 
 .about__png {
 width: 100%;
 height: 100%;
 
-@media screen and (min-width: 480px) {
-margin-bottom: 25px;
-margin: 0 auto;
-width: 80%;
-height: 80%;
-}
-
 @media screen and (max-width: 767px) {
 margin-bottom: 25px;
+margin: 0 auto;
+width: 280px;
+height: 280px;
 }
 
 @media screen and (min-width:768px) { 
@@ -215,10 +207,11 @@ margin-bottom: 25px;
 
 @media screen and (min-width: 321px) {
 margin-bottom: 25px;
-// width: 334px;
 }
 
 @media screen and (min-width:768px) { 
+width: 334px;
+
 margin-bottom: 20px;
 
 font-size: 14px;
