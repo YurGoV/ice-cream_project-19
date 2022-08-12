@@ -213,6 +213,8 @@
     justify-content: center;
     margin-top: 7px;
     border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
     width: 18px;
     height: 18px;
     background-color: $color-white;
@@ -307,4 +309,68 @@
         right: -16px;
         bottom: 30px;
     }
+}
+// Modal Section Hero
+.backdrop {
+    z-index: 22;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition-duration: 950ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.backdrop-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    z-index: 44;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    background-color: $color-white;
+    border: 4px solid $color-subtitle;
+    overflow-y: scroll;
+    font-family: $font-family;
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+}
+.modal__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: none;
+    justify-content: center;
+    cursor: pointer;
+
+&:hover svg,
+&:focus svg {
+    fill: $color-subtitle;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+.modal__icon-close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #6D6868;
 }
