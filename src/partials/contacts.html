@@ -99,7 +99,11 @@
       </li>
     </ul>
     <div class="contacts-button">
-      <button class="contacts-button__location" type="button">
+      <button
+        class="contacts-button__location"
+        type="button"
+        contacts-modal-open
+      >
         Our Locations
         <svg class="contacts-button__icon-locations" width="20" height="20">
           <use href="./images/icons.svg#icon-button-arrow"></use>
@@ -111,6 +115,62 @@
           <use href="./images/icons.svg#icon-button-arrow"></use>
         </svg>
       </button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+
+  <div class="contacts__backdrop is-hidden" contacts-modal>
+    <div class="contacts-modal">
+      <button class="contacts-modal__btn" contacts-modal-close>
+        <svg class="modal__icon-close" width="20px" height="20px">
+          <use href="./images/icons.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+      <ul class="list">
+        <li class="contacts-modal__items">
+          <p class="section__subtitle">Chicago cafe</p>
+          <div class="contacts-modal__office">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1011.703490926833!2d-87.60501079158838!3d41.80953740472021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1660286326921!5m2!1sru!2sua"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </li>
+        <li class="contacts-modal__items">
+          <p class="section__subtitle">Los Angeles Food Truck</p>
+          <div class="contacts-modal__office">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1810.8284374319435!2d-117.99686225825678!3d33.65524804294335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slos%20angeles!5e0!3m2!1sru!2sua!4v1660246742589!5m2!1sru!2sua"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </li>
+        <li class="contacts-modal__items">
+          <p class="section__subtitle">New York Cafe</p>
+          <div class="contacts-modal__office">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d762.9044300946381!2d-73.98525910139051!3d40.753666565224464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1660246984602!5m2!1sru!2sua"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
