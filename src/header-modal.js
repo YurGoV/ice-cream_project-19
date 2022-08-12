@@ -2,7 +2,7 @@
   const refs = {
     openModalBtn: document.querySelector("[data-header-modal-open]"),
     closeModalBtn: document.querySelector("[data-header-modal-close]"),
-    modal: document.querySelector("[header-data-modal]"),
+    modal: document.querySelector("[data-header-modal]"),
     body: document.querySelector("[data-body]"),
   };
 
@@ -18,7 +18,7 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-header-mobile-open]"),
-    modal: document.querySelector("[header-data-modal]"),
+    modal: document.querySelector("[data-header-modal]"),
     body: document.querySelector("[data-body]"),
   };
 
